@@ -54,7 +54,7 @@ mybatis-plus的强大功能：
 2.@TableField:用来指定表中的普通字段信息
 （1）：数据库中字段名和实体类中的字段名不匹配，所以加上TableField
 （2）：数据库中的字段名和关键字重名，例如：order，这个时候需要使用TableField进行声明：
-@TableField("'order'")//双引号和单引号嵌套模式
+@TableField("`order`")//双引号和反引号嵌套模式
 （3）：实体类中的字段存在，但是数据库中不存在，这个时候需要使用TableField进行声明：
 @TableField(exist=false)
 
