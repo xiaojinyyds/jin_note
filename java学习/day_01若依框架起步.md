@@ -46,7 +46,8 @@ public interface XxxxMapper extends BaseMapper<实体类>
 
 mybatis-plus的强大功能：
 1.可以将实体类名转换成小写下划线的名字（方便和数据库进行匹配，建表的时候也推荐使用下划线方式）
-2.
+2.可以将实体中的列名转换为小写加下划线，并根据变量类型推断字段类型
+3.mybatis-plus会把名为id
 
 
 
