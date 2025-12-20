@@ -60,7 +60,7 @@ mybatis-plus的强大功能：
 
 3.@TableId:用来指定表中的主键字段信息
 （1）实体类名为id,数据库名不为id，就需要指定。
-（2）type类型：IdType.AUTO,IdType.ASSIGN_ID,IdType.ASSIGN_UUID
+（2）type类型：IdType.AUTO（自增）,IdType.ASSIGN_ID（雪花算法）,IdType.ASSIGN_UUID(不推荐)
 
 
 
