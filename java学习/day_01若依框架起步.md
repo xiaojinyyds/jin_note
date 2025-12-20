@@ -63,4 +63,31 @@ mybatis-plus的强大功能：
 （2）type类型：IdType.AUTO（自增）,IdType.ASSIGN_ID（雪花算法）,IdType.ASSIGN_UUID(不推荐)
 
 
+mybatis-plus在application.yml中的一些常见配置：
 
+```
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto             # 全局id类型为自增长
+      update-strategy: not_null # 更新策略：只更新非空字段
+```
+
+```
+mybatis-plus:
+  type-aliases-package: com.itheima.pojo
+  mapper-locations: classpath:mapper/**/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+  global-config:
+    db-config:
+      id-type: auto             # 全局id类型为自增长
+      update-strategy: not_null # 更新策略：只更新非空字段
+```
+
+## mybatis-plus中的条件构建器
+
+构建一些复杂的增删改查任务
+![[Pasted image 20251220162614.png]]
