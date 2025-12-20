@@ -91,3 +91,6 @@ mybatis-plus:
 
 构建一些复杂的增删改查任务
 ![[Pasted image 20251220162614.png]]
+
+### 1.QueryWrapper
+无论是查询，修改，删除，都可以使用QueryWrapper来构建条件：
