@@ -44,5 +44,9 @@ public interface XxxxMapper extends BaseMapper<实体类>
 
 第五步：impl层中使用
 
+mybatis-plus的强大功能：
+1.可以将实体类名转换成小写下划线的名字（方便和数据库进行匹配，建表的时候也推荐使用下划线方式）
+2.
+
 
 
