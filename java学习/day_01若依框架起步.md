@@ -94,3 +94,6 @@ mybatis-plus:
 
 ### 1.QueryWrapper
 无论是查询，修改，删除，都可以使用QueryWrapper来构建条件：
+
+### 2.UpdateWrapper
+主要是执行一些复杂的更新操作，比如批量更新等
