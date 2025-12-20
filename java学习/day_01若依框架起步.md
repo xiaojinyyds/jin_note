@@ -50,7 +50,9 @@ mybatis-plus的强大功能：
 3.mybatis-plus会把名为id的字段作为主键
 
 有些情况下，实体中的类名和表名不完全一致，这个时候需要我们通过一些注解来声明：
-1.@TableName:
+1.@TableName:用来指定表名
+2.@TableField:用来指定表中的普通字段信息
+3.@TableId:用来指定表中的主键字段信息
 
 
 
