@@ -97,3 +97,6 @@ mybatis-plus:
 
 ### 2.UpdateWrapper
 主要是执行一些复杂的更新操作，比如批量更新等
+
+### 3.LambdaQueryWrapper和LambdaUpdateWrapper
+无论是上面的QueryWrapper还是UpdateWrapper在构建条件的时候都需要写死字段名称，这在编程规范中是不推荐的，为此，我们这里需要一种基于变量的getter方法结合反射技术来实现，因此咱们只要将条件对应的字段的getter方法传递给mybatis-plus，他就能计算出对应的变量名了，可以使用jdk8中的方法引用和lambda表达式
