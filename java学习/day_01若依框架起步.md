@@ -99,4 +99,14 @@ mybatis-plus:
 主要是执行一些复杂的更新操作，比如批量更新等
 
 ### 3.LambdaQueryWrapper和LambdaUpdateWrapper
-无论是上面的QueryWrapper还是UpdateWrapper在构建条件的时候都需要写死字段名称，这在编程规范中是不推荐的，为此，我们这里需要一种基于变量的getter方法结合反射技术来实现，因此咱们只要将条件对应的字段的getter方法传递给mybatis-plus，他就能计算出对应的变量名了，可以使用jdk8中的方法引用和lambda表达式
+无论是上面的QueryWrapper还是UpdateWrapper在构建条件的时候都需要写死字段名称，这在编程规范中是不推荐的，为此，我们这里需要一种基于变量的getter方法结合反射技术来实现，因此咱们只要将条件对应的字段的**getter**方法传递给mybatis-plus，他就能计算出对应的变量名了，可以使用jdk8中的方法引用和lambda表达式
+
+### IService接口
+mybatis-plus除了baseMapper外，还提供了通用的Serivice层接口及默认实现，并在其中封装了一些常用的service模版方法，通用接口为IService，默认实现为ServiceImpl，其中封装的接口有以下几类：
+save:(新增)
+remove：删除
+update:更新
+get：查询单个结果
+list：查询集合结果
+count：计数
+page：分页查询
