@@ -111,3 +111,16 @@ list：查询集合结果
 count：计数
 page：分页查询
 ![[Pasted image 20251221221554.png]]
+
+
+### Mybatis-plus的分页插件
+如果需要使用myba-plus的分页功能，这个时候需要引入一个分页插件PaginationInnerInterceptor，单独引入mybatis-plus-jsqlparser依赖
+```
+<dependency>
+    <groupId>com.baomidou</groupId>
+    <artifactId>mybatis-plus-jsqlparser</artifactId>
+    <version>3.5.11</version>
+</dependency>
+```
+此外，还需要再config文件夹下写一个MybatisConfig文件
+
