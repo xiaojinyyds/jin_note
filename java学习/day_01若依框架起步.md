@@ -110,3 +110,4 @@ get：查询单个结果
 list：查询集合结果
 count：计数
 page：分页查询
+![[Pasted image 20251221221554.png]]
